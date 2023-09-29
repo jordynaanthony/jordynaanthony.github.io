@@ -1,0 +1,231 @@
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  max-height: calc(100% - 200px); /* Adjust as needed */
+  overflow-y: auto; /* Add vertical scrollbar when needed */
+}
+
+body {
+  background-image: url('https://d31sxl6qgne2yj.cloudfront.net/wordpress/wp-content/uploads/20220906101319/Neon-Checkerboard.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  position: relative; /* Set the position to relative to contain the absolute positioned children */
+  width: 100%;
+}
+
+.timer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 20px 10px; /* Adjust margin as needed */
+  font-family: "Courier New", monospace;
+  font-size: 3em;
+  color: red;
+  background: linear-gradient(135deg, #d9d9d9 0%, #9f9f9f 50%, #6e6e6e 100%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.advertisement-banner {
+  padding: 10px;
+  background-image: url('https://media.istockphoto.com/id/1332281472/photo/shot-of-a-young-woman-working-with-cows-on-a-farm.jpg?s=612x612&w=0&k=20&c=8XKvmuCY0lTCNNL2Ntv24fUExHBFCRPl70q9IoTp-B4=');
+  color: rgb(35, 25, 25);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.advertisement-banner h2 {
+  font-size: 1.5em;
+}
+
+.advertisement-banner .pig-text {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.advertisement-banner .latin-text {
+  font-size: 0.5em;
+  color:#fefefe;
+}
+
+.advertisement-banner p {
+  font-size: 1.2em;
+}
+
+.advertisement-banner .attention-text {
+  background-color: green;
+  color: red;
+}
+
+.advertisement-banner .cta-button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #ff6600;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+.advertisement-banner .cta-button:hover {
+  background-color: #ff4500;
+  color: white;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://wallpapercave.com/wp/wp7719418.jpg');
+  opacity: 1;
+  z-index: 9998;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: auto;
+  z-index: 9999;
+}
+
+.popup-content {
+  text-align: center;
+  width: auto;
+}
+
+.close-button {
+  color: #ebebeb;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #ebebeb;
+  text-decoration: none;
+  /* cursor: pointer; */
+}
+
+.success-popup-content {
+  text-align: center;
+  padding: 10px;
+  background-image: url('https://t3.ftcdn.net/jpg/00/45/79/88/360_F_45798881_BwBUqAOSqmKL65nUxpCLyyeR3QxyUmjW.jpg');
+  color: yellow;
+  border-radius: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.success-popup-content p {
+  font-size: 1.5em;
+}
+
+.success-popup-content .close-button {
+  color: white;
+}
+
+.content {
+  width: 100%;
+  max-width: 100%;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+#rainbow-text-h1 {
+  background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2.5em;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Fuggles", cursive;
+}
+#rainbow-text-p {
+  background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Fuggles", cursive;
+}
+
+.input-field {
+  /* width: 100px; */
+  width: auto;
+  background-color: transparent;
+  padding: 10px;
+  color: rgb(130, 20, 20);
+  margin-bottom: 10px;
+  border: none;
+  /* position: absolute; */
+}
+
+.input-card {
+  width: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.input-field-special {
+  /* width: 300px; */
+  width: auto;
+  background-color: rgb(244, 244, 244);
+  padding: 10px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+/* #addressNum {
+  width: 50px;
+} */
+
+#submitButton {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 0.5em;
+  background-color: transparent;
+  color: rgb(156, 134, 134);
+  border: none;
+  /* cursor: pointer; */
+}
+
+#submitButton:disabled {
+  background-color: transparent;
+  /* cursor: not-allowed; */
+}
+
+#doNothingButton {
+  background-color: rgb(34, 167, 34);
+  padding: 10px 20px;
+}

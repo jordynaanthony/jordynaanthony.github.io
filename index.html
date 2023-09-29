@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="advertisement-banner">
+        <h2>Special <span class="pig-text">PIG</span> <span class="latin-text">latin</span> Offer!</h2>
+        <p>Eakingbray ewsnay: Etgay 70% offway onway ouryay irstfay appointmentway orfay aay imitedlay imetay!</p>
+        <p><span class="attention-text">ATTENTION: issthay ouponcay odecay ONLY orksway orfay COWS!</span></p>
+        <button id="couponButton" class="cta-button">Get <span class="pig-text">PIG</span> <span class="latin-text">latin</span> Coupon</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="timer" class="timer-box">Speed Run Challenge! You have <span id="countdown">20</span> seconds until this page refreshes and you have<br>to start over! Good luck :) </div>
+  </div>
+
+  <div class="container"></div>
+    <div id="overlay" class="overlay"></div>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-button" onclick="closePopup()">&times;</span>
+        <p>Your coupon code: 8 5 0 4 1 2 9 3 1 8 2 6 5 7 3 9 1</p>
+      </div>
+    </div>
+  
+    <div id="successPopup" class="popup">
+      <div class="success-popup-content">
+        <span class="close-button" onclick="closeSuccessPopup()">&times;</span>
+        <p>Cow vet visit appointment scheduled</p>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <h1 id="rainbow-text-h1">Welcome to the Veterinarians of Charlottesville Pet Cows (VCPC)!!!</h1>
+      <h1 style="color:black">Carefully follow the below instructions, please!!!</h1>
+      <p id="rainbow-text-p">The three fields immediately below this field that you're currently reading ask for the last four digits of your social security number, your mother's maiden name, and the street that you grew up on, respectively. Not completing these fields will not prevent you from effectively scheduling an appointment for your pet cow. The following instructions tell you how to complete the appoint request form. We proceed left to right, top to bottom. The five fields below this card containing these three fields ask for your first name, your second or last name, a third name field in which you should enter the name of the patient, your address as split into four boxes, and a coupon code. The address boxes take input as follows: state, street name (include your apartment or unit number here, if applicable), city or town name, street number, and ZIP code. A free coupon code can be found at the top of the screen, but if you do not want it, you should enter "NO" in this field. This code should be entered without any spaces. After you have filled out all of these fields, you can press the Submit button and if your appointment submission is successful, you will see a success message appear.</p>
+
+      <div class="input-card">
+        <input type="text" id="ssn" class="input-field-special" placeholder="Read the instructions" value="Last 4 digits of your SSN">
+        <input type="text" id="maiden" class="input-field-special" placeholder="Read the instructions" value="Mother's maiden name">
+        <input type="text" id="street" class="input-field-special" placeholder="Read the instructions" value="Street that you grew up on">
+        <button id = "doNothingButton" class="cta-button">Save</button>
+      </div>
+
+      <div class="input-card">
+      <p><span style="font-weight:bold; color:black;">YOU MUST FILL OUT THE FIELDS BELOW ACCORDING TO THE DIRECTIONS ABOVE.</span></p>
+    </div>
+      <div class="input-group">
+        <input type="text" id="firstName" class="input-field" placeholder="Read the instructions" value="First Name">
+        <input type="text" id="secondName" class="input-field" placeholder="Read the instructions" value="Second Name">
+        <input type="text" id="thirdName" class="input-field" placeholder="Read the instructions" style="min-width: 200px;" value="Third Name field (patient name)">
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="addressState" class="input-field" placeholder="Read the instructions" value="State">
+        <input type="text" id="addressStreet" class="input-field" placeholder="Read the instructions" value="Street Name">
+        <input type="text" id="addressCity" class="input-field" placeholder="Read the instructions" value="City or Town">
+        <input type="text" id="addressNum" class="input-field" placeholder="Read the instructions" value="Street Number">
+        <input type="text" id="addressZIP" class="input-field" placeholder="Read the instructions" value="ZIP Code">
+      </div>
+      
+      <div class="input-group">
+        <input type="text" id="couponCode" class="input-field" placeholder="If you don't want a discount, enter NO" style="min-width: 200px;" value="Coupon Code (without spaces)">
+      </div>
+
+    </div>
+
+    <div>
+      <button id="submitButton" class="cta-button" disabled onclick="openSuccessPopup()">Submit</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
