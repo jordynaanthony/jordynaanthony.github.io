@@ -74,8 +74,8 @@ body {
 }
 
 .advertisement-banner .cta-button:hover {
-  background-color: #ff4500;
-  color: white;
+  background-color: white;
+  color: #ff6600;
 }
 
 .overlay {
