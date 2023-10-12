@@ -178,9 +178,10 @@ body {
   width: auto;
   background-color: transparent;
   padding: 10px;
-  color: rgb(130, 20, 20);
+  color: rgba(130, 20, 20, 0.493);
   margin-bottom: 10px;
   border: none;
+  font-size: x-small;
   /* position: absolute; */
 }
 
@@ -191,20 +192,8 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  text-align: center;
 }
-
-.input-field-special {
-  /* width: 300px; */
-  width: auto;
-  background-color: rgb(244, 244, 244);
-  padding: 10px;
-  color: black;
-  margin-bottom: 10px;
-}
-
-/* #addressNum {
-  width: 50px;
-} */
 
 #submitButton {
   position: fixed;
@@ -229,3 +218,4 @@ body {
   background-color: rgb(34, 167, 34);
   padding: 10px 20px;
 }
+

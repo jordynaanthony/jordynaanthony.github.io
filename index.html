@@ -15,7 +15,7 @@
   </div>
 
   <div class="container">
-    <div id="timer" class="timer-box">Speed Run Challenge! You have <span id="countdown">20</span> seconds until this page refreshes and you have<br>to start over! Good luck :) </div>
+    <div id="timer" class="timer-box">Speed Run Challenge! You have <span id="countdown">70</span> seconds until this page refreshes and you have<br>to start over! Good luck :) </div>
   </div>
 
   <div class="container"></div>
@@ -39,7 +39,7 @@
 
       <h1 id="rainbow-text-h1">Welcome to the Veterinarians of Charlottesville Pet Cows (VCPC)!!!</h1>
       <h1 style="color:black">Carefully follow the below instructions, please!!!</h1>
-      <p id="rainbow-text-p">The three fields immediately below this field that you're currently reading ask for the last four digits of your social security number, your mother's maiden name, and the street that you grew up on, respectively. Not completing these fields will not prevent you from effectively scheduling an appointment for your pet cow. The following instructions tell you how to complete the appoint request form. We proceed left to right, top to bottom. The five fields below this card containing these three fields ask for your first name, your second or last name, a third name field in which you should enter the name of the patient, your address as split into four boxes, and a coupon code. The address boxes take input as follows: state, street name (include your apartment or unit number here, if applicable), city or town name, street number, and ZIP code. A free coupon code can be found at the top of the screen, but if you do not want it, you should enter "NO" in this field. This code should be entered without any spaces. After you have filled out all of these fields, you can press the Submit button and if your appointment submission is successful, you will see a success message appear.</p>
+      <p id="rainbow-text-p">The three fields immediately below this field that you're currently reading ask for the last four digits of your social security number, your mother's maiden name, and the street that you grew up on, respectively. Not completing these fields will not prevent you from effectively scheduling an appointment for your pet cow. The following instructions tell you how to complete the appoint request form. We proceed left to right, top to bottom. The five fields below this card containing these three fields ask for your first name, your second or last name, your address as split into four boxes, and a coupon code. The address boxes take input as follows: state, street name (include your apartment or unit number here, if applicable), city or town name, street number, and ZIP code. A free coupon code can be found at the top of the screen, but if you do not want it, you should enter "NO" in this field. This code should be entered without any spaces. After you have filled out all of these fields, you can press the Submit button and if your appointment submission is successful, you will see a success message appear.</p>
 
       <div class="input-card">
         <input type="text" id="ssn" class="input-field-special" placeholder="Read the instructions" value="Last 4 digits of your SSN">
@@ -49,20 +49,20 @@
       </div>
 
       <div class="input-card">
-      <p><span style="font-weight:bold; color:black;">YOU MUST FILL OUT THE BELOW FIELDS ACCORDING TO THE ABOVE INSTRUCTIONS!!!</span></p>
-    </div>
+        <p><span style="font-weight:bold; color:black;">YOU MUST FILL OUT THE BELOW FIELDS ACCORDING TO THE ABOVE INSTRUCTIONS!!!</span></p>
+      </div>
       <div class="input-group">
-        <input type="text" id="firstName" class="input-field" placeholder="Read the instructions" value="First Name">
-        <input type="text" id="secondName" class="input-field" placeholder="Read the instructions" value="Second Name">
-        <input type="text" id="thirdName" class="input-field" placeholder="Read the instructions" style="min-width: 200px;" value="Third Name field (patient name)">
+        <input type="text" id="firstName" class="input-field" placeholder="Read the instructions" value="First Name" style="text-align:right">
+        <input type="text" id="secondName" class="input-field" placeholder="Read the instructions" value="Second Name" style="text-align:right">
+        <!-- <input type="text" id="thirdName" class="input-field" placeholder="Read the instructions" style="min-width: 200px;" value="Third Name" style="text-align:right"> -->
       </div>
 
       <div class="input-group">
-        <input type="text" id="addressState" class="input-field" placeholder="Read the instructions" value="State">
-        <input type="text" id="addressStreet" class="input-field" placeholder="Read the instructions" value="Street Name">
-        <input type="text" id="addressCity" class="input-field" placeholder="Read the instructions" value="City or Town">
-        <input type="text" id="addressNum" class="input-field" placeholder="Read the instructions" value="Street Number">
-        <input type="text" id="addressZIP" class="input-field" placeholder="Read the instructions" value="ZIP Code">
+        <input type="text" id="addressState" class="input-field" placeholder="Read the instructions" value="State" style="text-align:right">
+        <input type="text" id="addressStreet" class="input-field" placeholder="Read the instructions" value="Street Name" style="text-align:right">
+        <input type="text" id="addressCity" class="input-field" placeholder="Read the instructions" value="City or Town" style="text-align:right">
+        <input type="text" id="addressNum" class="input-field" placeholder="Read the instructions" value="Street Number" style="text-align:right">
+        <input type="text" id="addressZIP" class="input-field" placeholder="Read the instructions" value="ZIP Code" style="text-align:right">
       </div>
       
       <div class="input-group">
@@ -71,6 +71,136 @@
 
     </div>
 
+    <!-- <div>
+      <button id="submitButton" class="cta-button" disabled onclick="openSuccessPopup()">Submit</button>
+    </div> -->
+  </div>
+
+  <div class="input-card">
+    <p><span style="font-weight:bold; color:black;">THE BELOW FIELDS SHOULD BE FILLED OUT WITH ONLY YOUR COW'S INFORMATION!!!</span></p>
+  </div>
+
+  <div class="content">
+    <img src="https://i.pinimg.com/originals/2c/ec/10/2cec102b944a92a018d5d877013ac222.jpg" alt="Sick Cow">
+  </div>
+
+  <div class="content">
+    <div class="input-group">
+      <input type="text" id="appointmentDate" class="input-field" placeholder="Read the instructions" value="Date (DDYYYYMM)" style="text-align:right">
+      <input type="text" id="appointmentTime" class="input-field" placeholder="Read the instructions" value="Time" style="text-align:right">
+    </div>
+  </div>
+
+  <div class="content">
+    <img src="https://i.pinimg.com/originals/2c/ec/10/2cec102b944a92a018d5d877013ac222.jpg" alt="Sick Cow">
+  </div>
+
+  <div class="content">
+    <div class="input-group"  style="text-align:right">
+      <input type="text" id="cowName" class="input-field" placeholder="Read the instructions" value="Name" style="text-align:right">
+    </div>
+  </div>
+
+  <div class="content">
+    <img src="https://i.pinimg.com/originals/2c/ec/10/2cec102b944a92a018d5d877013ac222.jpg" alt="Sick Cow">
+  </div>
+
+  <div class="content">
+    <div class="input-group"  style="text-align:right">
+      <input type="text" id="cowBreed" class="input-field" placeholder="Read the instructions" value="Type" style="text-align:right">
+    </div>
+  </div>
+
+  <div class="content">
+    <img src="https://i.pinimg.com/originals/2c/ec/10/2cec102b944a92a018d5d877013ac222.jpg" alt="Sick Cow">
+  </div>
+
+  <div class="content">
+    <div class="input-group" style="text-align:left">
+      <input type="text" id="cowGender" class="input-field" placeholder="Read the instructions" value="Pronouns" style="text-align:right">
+    </div>
+  </div>
+
+  <div class="content">
+    <img src="https://i.pinimg.com/originals/2c/ec/10/2cec102b944a92a018d5d877013ac222.jpg" alt="Sick Cow">
+  </div>
+
+  <div class="content">
+    <div class="input-group" style="text-align:right">
+      <input type="text" id="cowAge" class="input-field" placeholder="Read the instructions" value="Age" style="text-align:right">
+    </div>
+  </div>
+
+  <div class="content">
+    <img src="https://i.pinimg.com/originals/2c/ec/10/2cec102b944a92a018d5d877013ac222.jpg" alt="Sick Cow">
+  </div>
+
+  <div class="content">
+    <div class="input-group">
+      <input type="text" id="cowWeight" class="input-field" placeholder="Read the instructions" value="Weight" style="text-align:right">
+      <input type="text" id="cowWeightUnits" class="input-field" placeholder="Read the instructions" value="Weight (cont'd)" style="text-align:right">
+    </div>
+  </div>
+
+  <div class="content">
+    <img src="https://i.pinimg.com/originals/2c/ec/10/2cec102b944a92a018d5d877013ac222.jpg" alt="Sick Cow">
+  </div>
+
+  <div class="content">
+    <div class="input-group" style="text-align:right">
+      <input type="text" id="Problems" class="input-field" placeholder="Read the instructions" value="Describe what's wrong with your cow" style="text-align:right">
+    </div>
+  </div>
+
+  <div class="content">
+    <img src="https://i.pinimg.com/originals/2c/ec/10/2cec102b944a92a018d5d877013ac222.jpg" alt="Sick Cow">
+  </div>
+
+  <div class="content">
+    <div class="input-group" style="text-align:left">
+      <input type="text" id="Other" class="input-field" placeholder="Read the instructions" value="Do you have anything else to say?" style="text-align:right">
+    </div>
+  </div>
+
+  <div class="content">
+    <img src="https://i.pinimg.com/originals/2c/ec/10/2cec102b944a92a018d5d877013ac222.jpg" alt="Sick Cow">
+  </div>
+
+  <div class="content">
+    <select id="doctorDropdown" style="border: none; background-color: transparent; color: rgba(158, 115, 115, 0.493);">
+      <option value="none" style="background-color: transparent">Select one</option>
+      <option value="Batman">Batman</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE ON THIS DATE</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE AT THIS TIME</option>
+      <option value="Dr. UNG GULIT">Dr. UNG GULIT, CERTIFIED AT THIS TIME</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE AT THIS TIME</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE AT THIS TIME</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE ON THIS DATE</option>
+      <option value="Dr. BO VYNE">DR. BO VYNE, CERTIFIED ON THIS DATE</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE ON THIS DATE</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE ON THIS DATE</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE AT THIS TIME</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE AT THIS TIME</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE AT THIS TIME</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE ON THIS DATE</option>
+      <option value="Dr. MIA ELKE">Dr. MIA ELKE, CERTIFIED ON THIS DATE</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE AT THIS TIME</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE AT THIS TIME</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE ON THIS DATE</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE AT THIS TIME</option>
+      <option value="Dr. BESSIE VON COUL JR">Dr. BESSIE VON COUL JR, CERTIFIED AT THIS TIME</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE ON THIS DATE</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE AT THIS TIME</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE ON THIS DATE</option>
+      <option value="Dr. <UNAVAILABLE AT THIS TIME>">Dr. UNAVAILABLE ON THIS DATE</option>
+    </select>
+    
+    <p id="rainbow-text-h1"><span id="selectedDoctor"></span></p>
+  </div>
+
+  <br><br><br><br><br>
+
+  <div class="container">
     <div>
       <button id="submitButton" class="cta-button" disabled onclick="openSuccessPopup()">Submit</button>
     </div>

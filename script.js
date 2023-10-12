@@ -3,18 +3,7 @@ function refreshPage() {
     location.reload();
   }
   
-  // Refresh the page every 20 seconds (20000 milliseconds)
-  setInterval(refreshPage, 20000);
-
-  // document.addEventListener('DOMContentLoaded', function() {
-  //   const textInput = document.getElementById('textInput');
-  //   const submitButton = document.getElementById('submitButton');
-  
-  //   // Enable or disable the submit button based on text input
-  //   textInput.addEventListener('input', function() {
-  //     submitButton.disabled = textInput.value.trim() === '';
-  //   });
-  // });
+    setInterval(refreshPage, 70000);
 
   function openPopup() {
     var overlay = document.getElementById('overlay');
@@ -48,9 +37,26 @@ function refreshPage() {
       successPopup.style.display = 'none';
       document.body.style.overflow = 'auto';
   }
+
+
+  var submitButton = document.getElementById('submitButton');
+  const dropdown = document.getElementById('doctorDropdown');
+  const selectedDoctorElement = document.getElementById('selectedDoctor');
+  dropdown.addEventListener('change', () => {
+    if(dropdown.value == "Dr. UNG GULIT" || dropdown.value == "Dr. BO VYNE" || dropdown.value == "Dr. MIA ELKE" || dropdown.value == "Dr. BESSIE VON COUL JR") {
+      selectedDoctorElement.textContent = "You chose to schedule an appointment with " + dropdown.value + " for your cow's vet visit. Make sure you have completed all above fields BEFORE you submit!!!";
+      submitButton.disabled = false;
+    }
+    else {
+      selectedDoctorElement.textContent = "SYSTEM ERROR 1839JJ-181E9?";
+      submitButton.disabled = true;
+    }
+  });
+
+
   
   var textInputFields = document.querySelectorAll('.input-field');
-  var submitButton = document.getElementById('submitButton');
+  
   
   textInputFields.forEach(function(inputField) {
     inputField.addEventListener('input', function() {
@@ -58,12 +64,12 @@ function refreshPage() {
         return input.value.trim() !== '' && input.value.trim() !== input.getAttribute('value').trim();
       });
   
-      submitButton.disabled = !allFieldsFilled;
+      submitButton.disabled = !allFieldsFilled || dropdown.value === "none";
     });
   });
   
   // Set the timer duration in seconds
-  const timerDuration = 20;
+  const timerDuration = 70;
 
   let countdown = timerDuration;
   const countdownElement = document.getElementById('countdown');
@@ -78,4 +84,5 @@ function refreshPage() {
       document.getElementById('timer').textContent = 'Time\'s up!';
     }
   }, 1000);
+
   
