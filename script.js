@@ -16,7 +16,7 @@ function areAllFieldsFilled() {
     location.reload();
   }
   
-  setInterval(refreshPage, 70000);
+  setInterval(refreshPage, 75000);
   
   function openPopup() {
     var overlay = document.getElementById('overlay');
@@ -76,7 +76,7 @@ function areAllFieldsFilled() {
   });
   
   // Set the timer duration in seconds
-  const timerDuration = 70;
+  const timerDuration = 75;
   
   let countdown = timerDuration;
   const countdownElement = document.getElementById('countdown');
