@@ -127,8 +127,8 @@ body {
 .success-popup-content {
   text-align: center;
   padding: 10px;
-  /* background-image: url('https://t3.ftcdn.net/jpg/00/45/79/88/360_F_45798881_BwBUqAOSqmKL65nUxpCLyyeR3QxyUmjW.jpg'); */
-  background-color: transparent;
+  background-image: url('https://t3.ftcdn.net/jpg/00/45/79/88/360_F_45798881_BwBUqAOSqmKL65nUxpCLyyeR3QxyUmjW.jpg');
+/*   background-color: transparent; */
   color: yellow;
   border-radius: 0;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
